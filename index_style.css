@@ -1,0 +1,184 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#left {
+    position: fixed;
+}
+
+#right {
+    position: relative;
+    left: 600px;
+}
+
+.col-left {
+    width: 600px;
+}
+
+body {
+    background-color: 121212;
+}
+
+.row-height {
+    height: 100vh;
+}
+
+.font-xs {
+    font-size: 10px;
+}
+
+.font-m {
+    font-size: small;
+}
+
+.titles {
+    color: white;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.semibold {
+    font-weight: 600;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+
+.align_top {
+    vertical-align: text-top;
+}
+
+.mt-8 {
+    margin-top: 8px;
+}
+
+.right-panel {
+    display: block;
+    width: 600px;
+    padding: 40px;
+    margin-top: 60px;
+    background-color: 242424;
+    transition: all 0.3s ease
+}
+
+.right-panel:hover {
+    text-decoration: none;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.roboto_slab {
+    font-family: 'Roboto Slab', serif;
+}
+
+.name {
+    font-size: 70px;
+    margin-top: 60px;
+}
+
+.norm_text {
+    font-family: 'Open Sans', sans-serif;
+    color: 808080;
+}
+
+#navbar {
+    color: 536271;
+}
+
+#navbardrop {
+    color: 536271;
+}
+
+.buttons {
+    color: white;
+    font-size: large;
+    text-align: left;
+    width: 100px;
+    height: 30px;
+    border: none;
+    background: transparent;
+    transition: all 0.3s ease;
+    display: block;
+}
+
+.buttons:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.left-panel {
+    padding-right: 200px;
+}
+
+.list-style {
+    list-style-type: none;
+}
+
+.projects {
+    margin-top: 60px;
+}
+
+/*This means that whenever the user hovers over anything with
+the class proects, all article elements under it will have its 
+opacity reduced to 0.7.*/
+.projects:hover > article {
+    opacity: 0.7;
+    transition-duration: 0.5s;
+}
+
+/*This means that the opacity is already reduced from the css styling
+above, but when i hover over an article element(child element) and when
+I hover over the element with class projects(the parent element), the opacity
+of that particular element will be increased from 0.7 to 1.0.*/
+.projects:hover > article:hover {
+    opacity: 1.0;
+}
+
+.neg-margin-bot {
+    margin-bottom: -50px;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.extend-line {
+    color: blue;
+    width: 24px;
+    height: 1px;
+    margin-bottom: 5px;
+    margin-left: 16px;
+    margin-right: 16px;
+    background-color: 808080;
+}
+
+.links:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.links:hover > .extend-line{
+    width: 48px;
+    transition: 1s;
+}
+
+li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+}
+
+.socials {
+    color: white;
+    text-align: center;
+    margin-top: 1px;
+}   
